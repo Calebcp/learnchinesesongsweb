@@ -1,38 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LearnChineseSongs — Lyrics + Pinyin + English Explanation</title>
-  <meta name="description" content="Free Chinese song lyrics with pinyin and accurate English translations."/>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Learn Chinese Through Songs</title>
+  <meta name="description" content="Learn Chinese with the best songs – safe breakdowns, pinyin, vocabulary">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>LearnChineseSongs</h1>
-      <p class="tagline">Lyrics • Pinyin • English Explanation</p>
-    </header>
 
-    <main class="song-list">
-      <h2>Top Chinese Songs</h2>
-      <ul>
-        <li><a href="songs/jay-chou-qing-tian.html">Jay Chou 周杰伦 – 青花瓷 Qing Hua Ci (Fine China)</a></li>
-        <li><a href="songs/zhao-lei-chengdu.html">Zhao Lei 赵雷 – 成都 Chengdu</a></li>
-        <li><a href="songs/jj-lin-jiang-nan.html">JJ Lin 林俊杰 – 江南 Jiang Nan</a></li>
-        <li><a href="songs/teresa-teng-yue-liang-dai-biao-wo-de-xin.html">Teresa Teng 邓丽君 – 月亮代表我的心 The Moon Represents My Heart</a></li>
-        <li><a href="songs/eason-chan-shi-nian.html">Eason Chan 陈奕迅 – 十年 Ten Years</a></li>
-        <li><a href="songs/wang-fei-hong-dou.html">Faye Wong 王菲 – 红豆 Red Bean</a></li>
-        <li><a href="songs/wang-feng-shi-er-yue.html">Wang Feng – 十二月的泪 December Tears</a></li>
-        <li><a href="songs/wan-ting-qu-de-ge-sheng-li.html">Zhang Xuan 张悬 – 我的歌声里 In My Singing</a></li>
-        <li><a href="songs/stefanie-sun-tian-hei-hei.html">Stefanie Sun 孙燕姿 – 天黑黑 Tian Hei Hei</a></li>
-        <li><a href="songs/li-jian-bai-feng-chui-mai-lang.html">Li Jian 李健 – 风吹麦浪 Bei Feng Chui Mai Lang</a></li>
-      </ul>
-    </main>
-
-    <footer>
-      <p>© 2025 LearnChineseSongs.com – All lyrics for language-learning and entertainment purposes</p>
-    </footer>
+  <!-- Language Switcher – top-right -->
+  <div class="lang-switch">
+    <button id="en-btn" class="active" onclick="switchTo('en')">EN</button>
+    <button id="zh-btn" onclick="switchTo('zh')">中</button>
   </div>
+
+  <script>
+  function switchTo(lang) {
+    document.documentElement.lang = lang;
+    document.getElementById('en-btn').classList.toggle('active', lang === 'en');
+    document.getElementById('zh-btn').classList.toggle('active', lang === 'zh');
+  }
+  </script>
+
+  <!-- Top Navigation -->
+  <nav class="topnav">
+    <div class="logo">学歌</div>
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">Top Songs</a>
+      <a href="#">New</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Learn Chinese<br>Through Songs</h1>
+    <p>Lyrics Breakdown • Pinyin • Vocabulary • Culture</p>
+    <a href="#featured" class="cta">Start Learning →</a>
+  </section>
+
+  <!-- Featured Songs -->
+  <section class="featured" id="featured">
+    <h2>Top Songs</h2>
+    <div class="grid">
+      <a href="songs/zhao-lei-chengdu.html" class="song-card">
+          <div class="card-img" style="background:#c41a1a;"></div>
+          <h3>成都 Chengdu</h3>
+          <p>赵雷 Zhao Lei</p>
+        </a>
+        <a href="songs/teresa-teng-yue-liang-dai-biao-wo-de-xin.html" class="song-card">
+          <div class="card-img" style="background:#ff6b35;"></div>
+          <h3>月亮代表我的心</h3>
+          <p>邓丽君 Teresa Teng</p>
+        </a>
+        <a href="songs/wang-feng-shi-er-yue.html" class="song-card">
+          <div class="card-img" style="background:#ff6b35;"></div>
+          <h3>十二月的泪</h3>
+          <p>汪峰 Wang Feng</p>
+        </a>
+        <a href="songs/wang-fei-hong-dou.html" class="song-card">
+          <div class="card-img" style="background:#ff6b35;"></div>
+          <h3>红豆</h3>
+          <p>王菲 Wang Fei</p>
+        </a>
+        <a href="songs/wan-ting-qu-de-ge-sheng-li.html" class="song-card">
+          <div class="card-img" style="background:#ff6b35;"></div>
+          <h3>歌声里</h3>
+          <p>婉婷曲 Wan TingQu</p>
+        </a>
+        <a href="songs/stefanie-sun-tian-hei-hei.html" class="song-card">
+          <div class="card-img" style="background:#ff6b35;"></div>
+          <h3>天黑黑</h3>
+          <p>孙燕姿 Stephanie Sun</p>
+        </a>
+        <a href="songs/li-jian-bai-feng-chui-mai-lang.html" class="song-card">
+          <div class="card-img" style="background:#ff6b35;"></div>
+          <h3>风吹麦浪</h3>
+          <p>李健 Li Jian</p>
+        </a>
+        <a href="songs/jj-lin-jiang-nan.html" class="song-card">
+          <div class="card-img" style="background:#ff6b35;"></div>
+          <h3>江南</h3>
+          <p>林俊杰 JJ Lin</p>
+        </a>
+        <a href="songs/jay-chou-qing-tian.html" class="song-card">
+          <div class="card-img" style="background:#ff6b35;"></div>
+          <h3>青花瓷</h3>
+          <p>周杰伦 Jay Chou</p>
+        </a>
+        <a href="songs/eason-chan-shi-nian.html" class="song-card">
+          <div class="card-img" style="background:#b71c1c;"></div>
+          <h3>十年</h3>
+          <p>陈小霞 Earson Chan</p>
+        </a>
+    </div>
+  </section>
+
 </body>
 </html>
