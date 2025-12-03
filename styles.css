@@ -1,0 +1,10 @@
+body {margin:0; background:#fff9f0; font-family:'Noto Sans SC',sans-serif; color:#2c1a0d;}
+.container {max-width:960px; margin:0 auto; padding:20px; background:white; min-height:100vh; box-shadow:0 0 20px rgba(180,0,0,0.1);}
+header {text-align:center; padding:40px 0; background:linear-gradient(135deg,#c41a1a,#ff6b35); color:white; margin:-20px -20px 40px; border-radius:8px 8px 0 0;}
+h1 {font-size:3.5em; margin:0; font-weight:900; text-shadow:2px 2px 8px rgba(0,0,0,0.4);}
+.tagline {font-size:1.4em; margin:10px 0; opacity:0.95;}
+.song-list ul {list-style:none; padding:0; font-size:1.4em;}
+.song-list li {padding:12px 0; border-bottom:1px solid #ffe0b2;}
+.song-list a {color:#b71c1c; text-decoration:none; font-weight:600;}
+.song-list a:hover {color:#ff3d00;}
+footer {text-align:center; padding:40px; color:#8b4513; font-size:0.9em; margin-top:60px;}
